@@ -18,7 +18,7 @@ echo 'Restarting Apache' &&
 sudo systemctl reload apache2 &&
 echo 'Installing MariaDB' &&
 sudo apt-get install -y mariadb-server mariadb-client &&
-echo'Starting MariaDB Server' &&
+echo 'Starting MariaDB Server' &&
 sudo systemctl start mariadb &&
 echo 'Adding Apache2 & MariaDB to startup' &&
 sudo systemctl enable apache2 &&
