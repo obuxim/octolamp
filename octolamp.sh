@@ -10,10 +10,10 @@ echo 'Refreshing APT Repositories' &&
 sudo apt-get update -y &&
 echo 'Uninstalling PHP'
 sudo apt-get purge -y php* &&
-echo 'Installing PHP 7.3' &&
-sudo apt-get install -y php7.3 php7.3-common php7.3-fpm php7.3-mysql php7.3-pgsql php7.3-mbstring php7.3-xml php7.3-zip php7.3-gd libapache2-mod-php7.3 &&
+echo 'Installing PHP 7.4' &&
+sudo apt-get install -y php7.4 php7.4-common php7.4-fpm php7.4-mysql php7.4-pgsql php7.4-mbstring php7.4-xml php7.4-zip php7.4-gd libapache2-mod-php7.4 &&
 echo 'Configuring Apache' &&
-sudo a2enmod php7.3 &&
+sudo a2enmod php7.4 &&
 echo 'Restarting Apache' &&
 sudo systemctl reload apache2 &&
 echo 'Installing MariaDB' &&
